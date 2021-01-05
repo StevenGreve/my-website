@@ -4,9 +4,20 @@
     transition: transform 550ms ease;
 }
 
-/* Card Menu - Header Hover Effects */
+/* Card Menu — Header Hover Effects */
 .card-menu-flex h3 a:hover{
     color: #0077B5;
+}
+
+/* Contact Page — Contact Box Effects */
+.card-box:hover {
+    padding-left: 0.5rem;
+    border-left: 0.5rem solid #33C3F0;
+}
+
+/* Contact Page — Button Effects */
+#btn:hover{
+    background-color: #00AFF0;
 }
 
 /* Footer Animation */
