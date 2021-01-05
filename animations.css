@@ -1,0 +1,19 @@
+/* Navbar Animation */
+.rotate-360{
+    transform: rotate(360deg);
+    transition: transform 550ms ease;
+}
+
+/* Card Menu - Header Hover Effects */
+.card-menu-flex h3 a:hover{
+    color: #0077B5;
+}
+
+/* Footer Animation */
+.grow { 
+    transition: all 0.2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.5); 
+}
