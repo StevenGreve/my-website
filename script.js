@@ -91,3 +91,15 @@ heart.onmouseover = getFooterEffectHeart;
 function getFooterEffectHeart(){
     heart.classList.add("grow");
 }
+
+// Archive — Arrow Animation
+const arrow = document.getElementById("arrow-down");
+arrow.onmouseover = getArrowEffect;
+
+function getArrowEffect(){
+    arrow.classList.add("rotate-360");
+
+    setTimeout(function(){
+        arrow.classList.remove("rotate-360");
+    }, 2000);
+};
