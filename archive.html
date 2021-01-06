@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+    <meta name="author" content="Steven Bryan Greve">
+    <meta name="description" content="My first personal website.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Programming, English, Computer Science, Blog.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="archive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li id="resume"><a href="#">Resume</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="archive"><a href="archive.html">Archive</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+                <li id="home"><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="rules">
+        <h1>Memory</h1>
+        <!-- Game Introduction -->
+        <div class="one-half-column">
+            <h3>About</h3>
+            <p>Down below, you will find a small game that I programmed, it's called Memory. I tried my best to pin down and fix every error that I could find - but it's possible that there are still some errors present. With that being said, don't hesitate to submit a pull request to this repository on <a href="#"><em>GitHub</em>.</a><p>
+        </div>
+        <!-- Memory Rules -->
+        <div class="one-half-column">
+            <h3>Rules</h3>
+            <p>In this section, I will quickly cover all the rules that the game has. But, before I do that, it is worthwhile to mention that there are other mechanics besides the actual game, which you can take advantage of. Those features include the <code>Music</code> button, the <code>Reset</code> button, and the <code>Start</code> button. All of those features should be self explanatory. Here is a list with all the rules: 
+            <ul>
+                <li>Clicking on the <code>Start</code> and <code>Reset</code> button will randomly lay the cards in rows, face down.</li>
+                <li>If you turn over any two cards, and they match, you get to keep them.</li>
+                <li>If they don't match, they will be turned back over again.</li>
+                <li>Try to remember what was on each card and where it was, so you can uncover multiple pairs in a row.</li>
+                <li>In every round, you will have 30 seconds to uncover all pairs.</li>
+                <li>The game is won (over) when all the cards have been matched.</li>
+            </ul>
+            </p>
+        </div>
+        <!-- Arrow Down -->
+        <a href="#scroll" class="arrow-down" id="arrow-down"><i class="fas fa-angle-down"></i></a>  
+        <!-- Memory Board -->
+        <h1>Timer:</h1>
+        <div class="memory-center">
+            <div class="memory-outer-border">
+                <div class="memory-board">
+                    <div class="square"><img id="1"></div>
+                    <div class="square"><img id="2"></div>
+                    <div class="square"><img id="3"></div>
+                    <div class="square"><img id="4"></div>
+                    <div class="square"><img id="5"></div>
+                    <div class="square"><img id="6"></div>
+                    <div class="square"><img id="7"></div>
+                    <div class="square"><img id="8"></div>
+                    <div class="square"><img id="9"></div>
+                    <div class="square"><img id="10"></div>
+                    <div class="square"><img id="11"></div>
+                    <div class="square"><img id="12"></div>
+                    <div class="square"><img id="13"></div>
+                    <div class="square"><img id="14"></div>
+                    <div class="square"><img id="15"></div>
+                    <div class="square"><img id="16"></div>
+                </div>
+            </div>
+        </div>
+        <div id="buttons">
+            <button type="button" id="btn">Music</button>
+            <button type="button" id="btn">Start</button>
+            <button type="button" id="btn">Reset</button>
+            <button type="button" id="btn">Debug</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" id="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://codepen.io/StevenGreve" target="_blank" id="codepen"><i class="fab fa-codepen"></i></a>
+            <a href="https://github.com/StevenGreve" target="_blank" id="github"><i class="fab fa-github-alt"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-wordpress" id="wordpress"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-heart" id="heart"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Steven Bryan Greve &copy; 2020</p> 
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="jump.js"></script>
+    <script src="script.js"></script>
+    <script src="memory.js"></script>
+</body>
+</html>
