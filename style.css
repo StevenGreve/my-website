@@ -31,9 +31,9 @@ html, body{
 }
 
 #resume, #about, #archive, #contact, #home{ 
-    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    /*box-shadow: 1px 1px 5px rgba(0,0,0,.3);*/
     padding: 1px 10px 1px 10px; 
-    background-color: #2980b9;
+    /*background-color: #2980b9;*/
 }
 
 #home{
@@ -44,42 +44,10 @@ html, body{
 .project-section{
     margin-left: 3rem;
     margin-right: 3rem;
+    min-height: calc(100vh - 63.6px - 138px);
 }
 
 /* Main Section - Card Menu Styling */
-.card-menu-grid{
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.card-menu-flex{
-    display: flex;
-    flex-direction: column;
-    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
-    padding: 0 1rem 1rem 1rem;
-    background: none #FFFFFF;
-    color: black; 
-}
-
-.card-menu-flex h3{
-    margin-bottom: -0.5rem;
-}
-
-.card-menu-flex h3 a{
-    color: #33C3F0;
-}
-
-.card-menu-flex p{
-    flex: 1; /* Aligns the languages on the same line */
-}
-
-.card-menu-flex span{
-    font-size: 80%;
-    font-weight: 500;
-}
 
 /* Intro Message */
 .intro-message{
