@@ -1,53 +1,174 @@
 /* General Configurations */ 
-html, body{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* Source: https://www.gradientmagic.com/collection/subtlebg_light/gradient/1589329014329 */
     background-image: repeating-linear-gradient(90deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.06) 0px, hsla(196,0%,79%,0.06) 1px,transparent 1px, transparent 96px),repeating-linear-gradient(0deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),repeating-linear-gradient(90deg, hsla(196,0%,79%,0.09) 0px, hsla(196,0%,79%,0.09) 1px,transparent 1px, transparent 12px),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Navigation Styling */
-.nav-list{
+/*.nav-list{
     margin: 0;
     list-style-type: none;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     background-color: #3498db;
     font-size: 22px; 
-    text-shadow: 0 2px 2px black;
-    padding: 1rem; 
+    text-shadow: 0 2px 2px black; 
+    padding: 20px;
+}
+
+.nav-list li a{ 
+  text-decoration: none;
+  color: #ecf0f1;
 }
 
 .nav-list > li{
     margin-left: 2rem;
+}*/
+
+nav{
+    background-color: #3498db;
+    padding: 20px;
 }
 
-.nav-list li a{ 
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    list-style-type: none;
+}
+
+.nav-list a{
+    color: whitesmoke;
     text-decoration: none;
-    color: #ecf0f1;
+    font-size: 22px; 
+    text-shadow: 0 2px 2px black; 
 }
 
-#resume, #about, #archive, #contact, #home{ 
-    /*box-shadow: 1px 1px 5px rgba(0,0,0,.3);*/
-    padding: 1px 10px 1px 10px; 
-    /*background-color: #2980b9;*/
+.nav-list li {
+  margin-left: 2.5rem;
 }
 
 #home{
+  display: none;
+}
+
+.open-menu{
+    background-color: transparent;
+    border: 0;
+    color: snow;
+    font-size: 18px;
+    cursor: pointer;
     display: none;
-} 
+}
+
+@media screen and (max-width: 767px){
+  .nav-list{
+      display: none;
+      flex-direction: column;
+  }
+
+  .nav-list li{
+      margin: 0.5rem;
+  }
+
+  .open-menu{
+      display: block;
+  }
+
+  .nav-list.show{
+      display: flex;
+  }
+}
 
 /* Main Section Styling */
 .project-section{
     margin-left: 3rem;
     margin-right: 3rem;
-    min-height: calc(100vh - 63.6px - 138px);
+    min-height: calc(100vh - 64px - 136px);
 }
 
 /* Main Section - Card Menu Styling */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+/* Pen Design Only */
+
+/* Start */
+/*.news_hor {
+  font-family: Barlow;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  max-width: 678px;
+  width: 100%;
+  background-color: #ffffff;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.news_hor img {
+  width: 365px;
+  float: left;
+  position: relative;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding-right: 30px;
+  z-index: 1;
+}
+.news_hor:hover img,
+.news_hor.hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.news_hor figcaption {
+  padding: 5%;
+  padding-bottom: 73px;
+  width: 90%;
+  background-color: #ffffff;
+}
+
+.news_hor h3 {
+  font-family: "Cabin";
+  text-transform: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 3px 0;
+}
+
+.news_hor footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.065);
+  padding: 0 20px;
+  font-size: 13px;
+  line-height: 50px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hor_date {
+  float: left;
+  margin-left: 370px;
+}
+
+.news_hor a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}*/
 
 /* Intro Message */
 .intro-message{
@@ -77,17 +198,18 @@ html, body{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .copyright {
     font-size: 17px;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     text-shadow: 1px 1px black;
 }
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
     .nav-list{
         display: flex;
         justify-content: center;
@@ -98,4 +220,4 @@ html, body{
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
-}
+}*/

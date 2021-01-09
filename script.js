@@ -103,3 +103,12 @@ function getArrowEffect(){
         arrow.classList.remove("rotate-360");
     }, 2000);
 };
+
+
+//Mobile Menu - Beta Test
+const openMenu = document.getElementById("open-menu");
+const navUL = document.getElementById("nav-list");
+
+openMenu.addEventListener("click", () => {
+    navUL.classList.toggle("show");
+});
