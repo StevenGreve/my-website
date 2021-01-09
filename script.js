@@ -93,16 +93,17 @@ function getFooterEffectHeart(){
 }
 
 // Archive — Arrow Animation
-const arrow = document.getElementById("arrow-down");
-arrow.onmouseover = getArrowEffect;
+// const arrow = document.getElementById("arrow-down");
 
-function getArrowEffect(){
-    arrow.classList.add("rotate-360");
+// function getArrowEffect(){
+//     arrow.classList.add("rotate-360");
 
-    setTimeout(function(){
-        arrow.classList.remove("rotate-360");
-    }, 2000);
-};
+//     setTimeout(function(){
+//         arrow.classList.remove("rotate-360");
+//     }, 2000);
+// };
+
+// arrow.onmouseover = getArrowEffect;
 
 
 //Mobile Menu - Beta Test
