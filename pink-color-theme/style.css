@@ -1,0 +1,115 @@
+/* Navigation Styling */
+.navigation-list{
+    background-color: #EE63BB;
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    font-size: 1.375rem;
+}
+
+.navigation-list > li{
+    margin-left: 2.5rem;
+}
+
+.navigation-list li a {
+    text-decoration: none;
+    color: #fff;
+    text-shadow: -0.044rem 0.044rem 0 #1a1a1d, 0.044rem 0.044rem 0 #1a1a1d, 0.044rem -0.044rem 0 #1a1a1d, -0.044rem -0.044rem 0 #1a1a1d;
+    font-size: 1.5rem;
+    font-family: "Lora", serif;
+}
+
+#home{
+    display: none;
+}
+
+/* Project Section Styling */
+.project-section{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    min-height: calc(100vh - 3.85rem - 8.5rem);
+}
+
+.project-section .main-header{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 3rem;
+    color: #B43DA6;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    animation: text-shadow 1.5s ease-in-out infinite;
+}
+
+.project-wrapper{
+    display: grid;
+    justify-content: center;
+}
+
+.project-outer-border{
+    border: 0.063rem solid #A73399;
+    background-color: rgba(238,99,187,.2);
+    border-radius: 0.313rem;
+    display: inline-block;
+    padding: 1.25rem;
+}
+
+.project-outer-border p, .project-outer-border ul{
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 3rem;
+    list-style-type: none;
+    text-shadow: 0.125rem 0.125rem 0.25rem #333, 0 0 0.063rem #000;
+}
+
+#readme{
+    color: #fff;
+    text-decoration: none;
+}
+
+.project-header{
+    font-family: "Lora", serif;
+    padding-top: 2rem;
+    color: #EE63BB;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: -0.044rem 0.044rem 0 #1a1a1d, 0.044rem 0.044rem 0 #1a1a1d, 0.044rem -0.044rem 0 #1a1a1d, -0.044rem -0.044rem 0 #1a1a1d;
+}
+
+/* Intro Message */
+.intro-message{
+    background-color: #FF80D3;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 3rem;
+    text-shadow: 0.063rem 0.063rem 0.063rem #333, 0 0 0.063rem #000, 0 0 0.625rem #333;
+}
+
+/* Footer Styling */
+.footer{
+    color:#fff;
+    background-color: #EE63BB;
+    text-shadow: 0.063rem 0.063rem 0.063rem #333, 0 0 0.063rem #000, 0 0 0.250rem #333;
+}
+
+.social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.563rem;
+}
+
+.social-links a{
+    color:#fff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.copyright{
+    font-size: 1.063rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+    text-shadow: 0.063rem 0.063rem 0.063rem #333, 0 0 0.063rem #000, 0 0 0.625rem #333;
+}
