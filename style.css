@@ -100,7 +100,7 @@ nav{
 /* Pen Design Only */
 
 /* Start */
-/*.news_hor {
+.news_hor {
   font-family: Barlow;
   position: relative;
   overflow: hidden;
@@ -168,7 +168,7 @@ nav{
   bottom: 0;
   position: absolute;
   z-index: 1;
-}*/
+}
 
 /* Intro Message */
 .intro-message{
