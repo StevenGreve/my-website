@@ -2,8 +2,11 @@
 Here is what I'm currently working on:
 - [ ] Changing the color theme of the website. The website is going to have multiple different color themes. 
 - [ ] Improving the responsiveness for mobile devices.
-- [ ] Revamping the card menu for the index page. 
+- [X] Revamping the card menu for the index page. 
 - [ ] Adding additional content to the index page. 
+
+Remarks:
+* 14th of Januaray: I implemented the error page as well as the card menu for the index. Though, it is worth mentioning that I wasn't able to get good pictures for my projects, which is why I opted for random placeholder images, instead. Right now, these placeholder images only are supposed to show how the card menu would look like if I had proper images. Unfortunately, I wasn't able to implement the mobile menu today - as well the changelog page. Because of this, I will add these tasks to the ones I planned to do tomorrow. 
  
 # Planned
 Note: the prototype for this website is scheduled to be finished at the 15th of January. 
