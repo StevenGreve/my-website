@@ -75,3 +75,8 @@
       transition: none !important;
     }
 }
+
+/* Project Section — Card Menu Header Hover Effect */
+figcaption a:hover{
+    color: #FFBFFE;;
+}
