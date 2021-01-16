@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <meta name="author" content="Steven Bryan Greve">
+    <meta name="description" content="My first personal website.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Programming, English, Computer Science, Blog.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="configurations.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="mobile-menu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="open-menu" id="open-menu"><i class="fas fa-bars"></i></div>
+            <ul class="navigation-list" id="navigation-list">
+                <li id="resume"><a href="error.html">Resume</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="archive"><a href="error.html">Archive</a></li>
+                <li id="contact"><a href="error.html">Contact</a></li>
+                <li id="changelog"><a href="error.html">Changelog</a></li>
+                <li id="home"><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="showcase">
+        <div class="video-container">
+            <video src="files/Clouds.mp4" playsinline autoplay muted loop></video>
+        </div>
+        <div class="content">
+            <a href="#scroll" class="btn">Read More</a>
+        </div>
+    </main>
+
+    <section class="about" id="scroll">
+        <h1>About Me</h1>
+        <div class="one-third-column">
+            <h3>Self-Taught Programmer</h3>
+            <p>Hello, my name is Steven, and I'm a self-taught programmer! So far, I have accumulated experience in Python, Java, HTML, CSS, Skeleton, LaTeX, and JavaScript. In the future, I'm going to learn Git, Tailwind, and Bootstrap, as well.
+            </p>
+        </div>
+        <div class="one-third-column">
+            <h3>Tech Stack</h3>
+            <p>At the moment, I'm focused on my projects and improving my already existing technology stack: namely JavaScript and CSS. Either way, I have planned a lot of projects. Some of those projects have already been finished, which, as you already might know, can be found on my GitHub profile — so make sure to check them out!</p>
+        </div> 
+        <div class="one-third-column">
+            <h3>Epilog</h3>
+            <p>If you read all of this, thank you for following the development of this website! PS: Any kind of constructive feedback is highly appreciated!</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="error.html" target="_blank" id="youtube"><i class="fab fa-youtube"></i></a>
+            <a href="https://codepen.io/StevenGreve" target="_blank" id="codepen"><i class="fab fa-codepen"></i></a>
+            <a href="https://github.com/StevenGreve" target="_blank" id="github"><i class="fab fa-github-alt"></i></a>
+            <a href="error.html" target="_blank" id="wordpress"><i class="fab fa-wordpress"></i></a>
+            <a href="error.html" target="_blank" id="knight"><i class="fas fa-chess-knight"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Steven Bryan Greve &copy; <script>document.write(new Date().getFullYear());</script></p> 
+        </div>
+    </footer>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="jump.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
