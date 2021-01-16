@@ -1,9 +1,12 @@
 /* Navigation Styling */
-.navigation-list{
+header nav{
     background-color: #EE63BB;
+    padding: 1rem;
+}
+
+.navigation-list{
     display: flex;
     list-style-type: none;
-    padding: 1rem;
     font-size: 1.375rem;
 }
 

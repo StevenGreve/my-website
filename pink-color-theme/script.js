@@ -102,3 +102,11 @@ knight.onmouseover = getFooterEffectKnight;
 function getFooterEffectKnight(){
     knight.classList.add("grow");
 }
+
+//Mobile Menu
+const openMenu = document.getElementById("open-menu");
+const navUL = document.getElementById("navigation-list");
+
+openMenu.addEventListener("click", () => {
+    navUL.classList.toggle("show");
+});
