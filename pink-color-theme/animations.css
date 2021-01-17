@@ -80,3 +80,8 @@
 figcaption a:hover{
     color: #FFBFFE;;
 }
+
+/* Archive Page — Button Effects */
+#btn:hover{
+    background-color: #EE63BB;
+}
