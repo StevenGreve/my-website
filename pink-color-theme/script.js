@@ -2,7 +2,6 @@
 const resume = document.getElementById("resume");
 const about = document.getElementById("about");
 const archive = document.getElementById("archive");
-const contact = document.getElementById("contact");
 const home = document.getElementById("home");
 const changelog = document.getElementById("changelog");
 
@@ -33,16 +32,6 @@ function getNavbarEffectArchive(){
 
     setTimeout(function(){
         archive.classList.remove("rotate-360");
-    }, 2000);
-}
-
-contact.onmouseover = getNavbarEffectContact;
-
-function getNavbarEffectContact(){
-    contact.classList.add("rotate-360");
-
-    setTimeout(function(){
-        contact.classList.remove("rotate-360");
     }, 2000);
 }
 

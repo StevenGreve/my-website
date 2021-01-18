@@ -85,7 +85,7 @@ header nav{
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
   
 .card{
@@ -119,6 +119,44 @@ figcaption a{
 figcaption p{
     color: #fff;
     text-shadow: 0.125rem 0.125rem 0.25rem #333, 0 0 0.063rem #000;
+}
+
+/* Contact Section Styling */
+.contact-header{
+    font-family: "Lora", serif;
+    color: #EE63BB;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: -0.044rem 0.044rem 0 #1a1a1d, 0.044rem 0.044rem 0 #1a1a1d, 0.044rem -0.044rem 0 #1a1a1d, -0.044rem -0.044rem 0 #1a1a1d;
+    padding-bottom: 2rem;
+}
+
+.contact-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.contact-box{
+    background-color: rgba(238,99,187,.2);
+    border: 1px solid #EE63BB;
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+
+.contact-box p{
+    color: #fff;
+    font-size: 1.25rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem #333, 0 0 0.063rem #000;
+    word-break: break-all;
+    text-align: center;
+}
+
+.contact-box a{
+    color: #292933;
+    text-decoration: none;
+    text-shadow: none;
+    font-weight: bold;
 }
 
 /* Intro Message */
