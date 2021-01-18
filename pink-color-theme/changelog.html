@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
+    <title>Changelog Page</title>
     <meta name="author" content="Steven Bryan Greve">
     <meta name="description" content="My first personal website.">
     <meta name="keywords" content="HTML, CSS, JavaScript, Programming, English, Computer Science, Blog.">
@@ -12,7 +12,7 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="configurations.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="changelog.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="mobile-menu.css">
 </head>
@@ -30,31 +30,36 @@
         </nav>
     </header>
 
-    <main class="showcase">
-        <div class="video-container">
-            <video src="files/Clouds.mp4" playsinline autoplay muted loop></video>
-        </div>
-        <div class="content">
-            <a href="#scroll" class="btn">Read More</a>
-        </div>
-    </main>
-
-    <section class="about" id="scroll">
-        <h1>About Me</h1>
-        <div class="one-third-column">
-            <h3>Self-Taught Programmer</h3>
-            <p>Hello, my name is Steven, and I'm a self-taught programmer! So far, I have accumulated experience in Python, Java, HTML, CSS, Skeleton, LaTeX, and JavaScript. In the future, I'm going to learn Git, Tailwind, and C#, as well.
-            </p>
-        </div>
-        <div class="one-third-column">
-            <h3>Tech Stack</h3>
-            <p>At the moment, I'm focused on my projects and improving my already existing technology stack: namely JavaScript and CSS. Either way, I have planned a lot of projects. Some of those projects have already been finished, which, as you already might know, can be found on my GitHub profile — so make sure to check them out!</p>
-        </div> 
-        <div class="one-third-column">
-            <h3>Epilog</h3>
-            <p>If you read all of this, thank you for following the development of this website! PS: Any kind of constructive feedback is highly appreciated!</p>
-        </div>
-    </section>
+    <!-- Source: https://codepen.io/AllThingsSmitty/pen/MyqmdM -->
+    <div class="table-wrapper">
+        <table>
+            <caption>In the table down below, you can find all all the updates that get made on this site.</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" data-label="date">18.01.2021</td>
+                    <td data-label="change">Added the changelog page.</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="date">18.01.2021</td>
+                    <td data-label="change">Improved the responsiveness of the memory board.</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="date">18.01.2021</td>
+                    <td data-label="change">Converted all the units to the rem unit.</td>
+                </tr>
+                <tr>
+                    <td scope="row" data-label="date">18.01.2021</td>
+                    <td data-label="change">Corrected some grammatical errors.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <footer class="footer">
         <div class="social-links">
@@ -69,10 +74,7 @@
         </div>
     </footer>
 
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <!-- JavaScript -->
-    <script src="jump.js"></script>
     <script src="script.js"></script>
 
 </body>
