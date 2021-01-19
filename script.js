@@ -1,9 +1,9 @@
-// Navbar Animation (for all pages)
+// Navigation Bar Animation 
 const resume = document.getElementById("resume");
 const about = document.getElementById("about");
 const archive = document.getElementById("archive");
-const contact = document.getElementById("contact");
 const home = document.getElementById("home");
+const changelog = document.getElementById("changelog");
 
 resume.onmouseover = getNavbarEffectResume;
 
@@ -35,13 +35,13 @@ function getNavbarEffectArchive(){
     }, 2000);
 }
 
-contact.onmouseover = getNavbarEffectContact;
+changelog.onmouseover = getNavbarEffectChangelog;
 
-function getNavbarEffectContact(){
-    contact.classList.add("rotate-360");
+function getNavbarEffectChangelog(){
+    changelog.classList.add("rotate-360");
 
     setTimeout(function(){
-        contact.classList.remove("rotate-360");
+        changelog.classList.remove("rotate-360");
     }, 2000);
 }
 
@@ -55,12 +55,12 @@ function getNavbarEffectHome(){
     }, 2000);
 }
 
-// Footer Animation (for all pages)
+// Footer Animation 
 const youtube = document.getElementById("youtube");
 const github = document.getElementById("github");
 const wordpress = document.getElementById("wordpress");
 const codepen = document.getElementById("codepen");
-const heart = document.getElementById("heart");
+const knight = document.getElementById("knight");
 
 youtube.onmouseover = getFooterEffectYoutube;
 
@@ -86,29 +86,15 @@ function getFooterEffectCodepen(){
     codepen.classList.add("grow");
 }
 
-heart.onmouseover = getFooterEffectHeart;
+knight.onmouseover = getFooterEffectKnight;
 
-function getFooterEffectHeart(){
-    heart.classList.add("grow");
+function getFooterEffectKnight(){
+    knight.classList.add("grow");
 }
 
-// Archive — Arrow Animation
-// const arrow = document.getElementById("arrow-down");
-
-// function getArrowEffect(){
-//     arrow.classList.add("rotate-360");
-
-//     setTimeout(function(){
-//         arrow.classList.remove("rotate-360");
-//     }, 2000);
-// };
-
-// arrow.onmouseover = getArrowEffect;
-
-
-//Mobile Menu - Beta Test
+//Mobile Menu
 const openMenu = document.getElementById("open-menu");
-const navUL = document.getElementById("nav-list");
+const navUL = document.getElementById("navigation-list");
 
 openMenu.addEventListener("click", () => {
     navUL.classList.toggle("show");
