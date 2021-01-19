@@ -58,7 +58,7 @@
     padding: 0.938rem;
     border: 0.25rem solid #21759b;
     background-position: center;
-    background-image: url(files/Knight.png);
+    background-image: url("assets/Knight.png");
 }
 
 .memory-board{
