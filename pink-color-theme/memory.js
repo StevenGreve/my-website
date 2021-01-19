@@ -1,7 +1,7 @@
-// Randomly arranges images on the memory board. 
+// An array of numbers that will be used to randomly arrange images on the memory board.
 const availableNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 
-// Example: var exampleArray = [1, 2, 3, 4, 5] | array.length - 1 ensures that there won't be an "out of bounce" error. In this case, -1 means that the array starts at 0. | Since Math.random() creates a random number from 0 to 1, (for example 0.5) you will get a number like 2.5 because 0.5 * 5 = 2.5. | var temp = array[i] will save a random number from 1 to 4, array[i] = array[j] will set a random number from 0 to 4 equal to the randomly generated number, and array[j] = temp will set the randomly generated number equal to the temporary variable from earlier.
+/* Now — to understand this function, we will take the following array as an example: var exampleArray = [1, 2, 3, 4, 5]; array.length - 1 ensures that there won't be an "out of bounds" error. In this case, -1 means that the array starts at 0. Since Math.random() creates a random number from 0 to 1 (for example 0.5), you will get a number like 2.5, because 0.5 * 5 = 2.5. var temp = array[i] will save a random number from 1 to 4, whereas array[i] = array[j] will set a random number from 0 to 4 equal to the randomly generated number, and array[j] = temp will set the randomly generated number equal to the temporary value variable from earlier. */
 function shuffle(array) { 
     for (var i = array.length - 1; i > 0; i--) {  
         var j = Math.floor(Math.random() * (i + 1)); 
@@ -12,12 +12,12 @@ function shuffle(array) {
     return array; 
 } 
 
-/* Given max = 5 and min = 1: Math.floor(Math.random()*(5-1+1)+1) = Math.floor(Math.random()*5 +1). This can be thought as as "give me a percentage of 5 (from 0 to 99%) and add 1 to it". The percentage will always give you some value between 0 and 4.99. Since +1 is outside the scope of the random() range, it will guarantee that the random number is between 1 and 5.99. Floor() will guarantee that it's between 1 and 5 because 5.99 gets rounded down to 5. By extension, this will also mean that the possible output can only contain the following numbers: 1, 2, 3, 4, and 5.*/
+/* Example: given max = 5 and min = 1, Math.floor(Math.random() * (5 - 1 + 1) +1) = Math.floor(Math.random() * 5 + 1). Since +1 is outside of the scope of the random() range, it will guarantee that the random number is between 1 and 5.99. Math.floor() will make sure that it's a number between 1 and 5, because 5.99 gets rounded down to 5. By extension, this also means that the possible output can only consist of the following numbers: 1, 2, 3, 4, and 5. */
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-// Counts = 2 (number of duplicates) | fromPopulation is a continuous sequence of numbers, meaning that the images need to be named 1, 2, 3, 4, 5 ... n. If the images in the image folder are not named in said sequence, the program will most likely throw an error. | k = the numbers of pairs. 
+// Counts = 2 stands for the numbers of duplicates. | fromPopulation is a continuous sequence of numbers, meaning the images need to be named 1, 2, 3, 4, 5 ... n. If the images in the img folder are not named after said sequence, the program will throw an error. | k = the number of pairs.
 function sample(fromPopulation, counts) {
     let result = [];
     let k = fromPopulation.length/2;    
@@ -39,14 +39,14 @@ function sample(fromPopulation, counts) {
 
 let sampledNumbers = (sample(availableNumbers, 2));
 
-//This function makes sure that all the images appear on the board.
+// Ensures that all the images appear on the memory board. 
 function getRandomImage() {
     for(let i = 1; i <= sampledNumbers.length; i++){
         document.getElementById(`${i}`).src ="img/" + sampledNumbers[i-1] + ".jpg";
     }
 }
 
-// Game Logic 
+// Game Logic
 class Card
 {
     constructor(index, value){
@@ -64,7 +64,7 @@ class Card
 
     reveal(){
         document.getElementById(`${this.index}`).src = `img/${this.filename}`;
-        this.revealed = true;
+        this.revealed = true;   
     }
 
     flipBack(){
@@ -77,13 +77,13 @@ class Card
     }
 }
 
-// Create array of card objects
+// Creates an array of card objects.
 const cards = [];
 for(let i = 0; i < sampledNumbers.length; i++){
     cards.push(new Card(i+1, sampledNumbers[i]));
 }
 
-// Implements the game logic
+// Implementation of the rules.
 function checkGameState(cards){
     let tmp = [];
     let cardsWon = [];
