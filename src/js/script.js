@@ -99,3 +99,15 @@ const navUL = document.getElementById("navigation-list");
 openMenu.addEventListener("click", () => {
     navUL.classList.toggle("show");
 });
+
+// Archive Animation
+const arrow = document.getElementById("arrow-down");
+arrow.onmouseover = getArrowEffect;
+
+function getArrowEffect(){
+    arrow.classList.add("rotate-360");
+
+    setTimeout(function(){
+        arrow.classList.remove("rotate-360");
+    }, 2000);
+};
