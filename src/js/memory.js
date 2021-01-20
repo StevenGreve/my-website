@@ -95,7 +95,7 @@ function checkGameState(cards){
                 tmp[0].outOfGame = true;
                 tmp[1].outOfGame = true;
                 tmp = [];
-                console.log("It's a match.");
+                alert("It's a match.");
             }
         }
         if(card.revealed === true && card.outOfGame === true){
