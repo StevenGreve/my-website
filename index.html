@@ -102,6 +102,7 @@
         const configurations = document.getElementById("default-theme-configurations");
         const style = document.getElementById("default-theme-style");
         const animations = document.getElementById("default-theme-animations");
+        const mobileMenu = document.getElementById("default-theme-mobile-menu");
         knightLink.addEventListener("click", function(){
             if(configurations.getAttribute("href") == "src/css/default-theme/configurations.css"){
                 configurations.href = "src/css/pink-theme/configurations.css";
@@ -124,6 +125,14 @@
             }
             else{
                 animations.href = "src/css/default-theme/animations.css";
+            }
+        })
+        knightLink.addEventListener("click", function(){
+            if(mobileMenu.getAttribute("href") == "src/css/default-theme/mobile-menu.css"){
+                mobileMenu.href = "src/css/pink-theme/mobile-menu.css";
+            }
+            else{
+                mobileMenu.href = "src/css/default-theme/mobile-menu.css";
             }
         })
     </script>
