@@ -78,7 +78,7 @@
         const knightLink = document.getElementById("knight");
         const configurations = document.getElementById("default-theme-configurations");
         const style = document.getElementById("default-theme-style");
-        const aboutSection = document.getElementById("default-theme-about");
+        const aboutLink = document.getElementById("default-theme-about");
         const animations = document.getElementById("default-theme-animations");
         const mobileMenu = document.getElementById("default-theme-mobile-menu");
         knightLink.addEventListener("click", function(){
@@ -98,11 +98,11 @@
             }
         })
         knightLink.addEventListener("click", function(){
-            if(aboutSection.getAttribute("href") == "src/css/default-theme/about.css"){
-                aboutSection.href = "src/css/pink-theme/about.css";
+            if(aboutLink.getAttribute("href") == "src/css/default-theme/about.css"){
+                aboutLink.href = "src/css/pink-theme/about.css";
             }
             else{
-                aboutSection.href = "src/css/default-theme/about.css";
+                aboutLink.href = "src/css/default-theme/about.css";
             }
         })
         knightLink.addEventListener("click", function(){
