@@ -10,11 +10,11 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="src/css/default-theme/configurations.css">
-    <link rel="stylesheet" href="src/css/default-theme/style.css">
-    <link rel="stylesheet" href="src/css/default-theme/about.css">
-    <link rel="stylesheet" href="src/css/default-theme/animations.css">
-    <link rel="stylesheet" href="src/css/default-theme/mobile-menu.css">
+    <link rel="stylesheet" href="src/css/default-theme/configurations.css" id="default-theme-configurations">
+    <link rel="stylesheet" href="src/css/default-theme/style.css" id="default-theme-style">
+    <link rel="stylesheet" href="src/css/default-theme/about.css" id="default-theme-about">
+    <link rel="stylesheet" href="src/css/default-theme/animations.css" id="default-theme-animations">
+    <link rel="stylesheet" href="src/css/default-theme/mobile-menu.css" id="default-theme-mobile-menu">
 </head>
 <body>
     <header>
@@ -62,7 +62,7 @@
             <a href="https://codepen.io/StevenGreve" target="_blank" id="codepen"><i class="fab fa-codepen"></i></a>
             <a href="https://github.com/StevenGreve" target="_blank" id="github"><i class="fab fa-github-alt"></i></a>
             <a href="error.html" target="_blank" id="wordpress"><i class="fab fa-wordpress"></i></a>
-            <a href="error.html" target="_blank" id="knight"><i class="fas fa-chess-knight"></i></a>
+            <a id="knight"><i class="fas fa-chess-knight"></i></a>
         </div>
         <div class="copyright">
             <p>Steven Bryan Greve &copy; <script>document.write(new Date().getFullYear());</script></p> 
@@ -74,6 +74,53 @@
     <!-- JavaScript -->
     <script src="src/js/jump.js"></script>
     <script src="src/js/script.js"></script>
-
+    <script>
+        const knightLink = document.getElementById("knight");
+        const configurations = document.getElementById("default-theme-configurations");
+        const style = document.getElementById("default-theme-style");
+        const aboutSection = document.getElementById("default-theme-about");
+        const animations = document.getElementById("default-theme-animations");
+        const mobileMenu = document.getElementById("default-theme-mobile-menu");
+        knightLink.addEventListener("click", function(){
+            if(configurations.getAttribute("href") == "src/css/default-theme/configurations.css"){
+                configurations.href = "src/css/pink-theme/configurations.css";
+            }
+            else{
+                configurations.href = "src/css/default-theme/configurations.css";
+            }
+        })
+        knightLink.addEventListener("click", function(){
+            if(style.getAttribute("href") == "src/css/default-theme/style.css"){
+                style.href = "src/css/pink-theme/style.css";
+            }
+            else{
+                style.href = "src/css/default-theme/style.css";
+            }
+        })
+        knightLink.addEventListener("click", function(){
+            if(aboutSection.getAttribute("href") == "src/css/default-theme/about.css"){
+                aboutSection.href = "src/css/pink-theme/about.css";
+            }
+            else{
+                aboutSection.href = "src/css/default-theme/about.css";
+            }
+        })
+        knightLink.addEventListener("click", function(){
+            if(animations.getAttribute("href") == "src/css/default-theme/animations.css"){
+                animations.href = "src/css/pink-theme/animations.css";
+            }
+            else{
+                animations.href = "src/css/default-theme/animations.css";
+            }
+        })
+        knightLink.addEventListener("click", function(){
+            if(mobileMenu.getAttribute("href") == "src/css/default-theme/mobile-menu.css"){
+                mobileMenu.href = "src/css/pink-theme/mobile-menu.css";
+            }
+            else{
+                mobileMenu.href = "src/css/default-theme/mobile-menu.css";
+            }
+        })
+    </script>
 </body>
 </html>
