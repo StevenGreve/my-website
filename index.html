@@ -10,7 +10,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="src/css/default-theme/configurations.css">
+    <link rel="stylesheet" href="src/css/default-theme/configurations.css" id="default-theme-configurations">
     <link rel="stylesheet" href="src/css/default-theme/style.css">
     <link rel="stylesheet" href="src/css/default-theme/animations.css">
     <link rel="stylesheet" href="src/css/default-theme/mobile-menu.css">
@@ -88,7 +88,7 @@
             <a href="https://codepen.io/StevenGreve" target="_blank" id="codepen"><i class="fab fa-codepen"></i></a>
             <a href="https://github.com/StevenGreve" target="_blank" id="github"><i class="fab fa-github-alt"></i></a>
             <a href="error.html" target="_blank" id="wordpress"><i class="fab fa-wordpress"></i></a>
-            <a href="error.html" target="_blank" id="knight"><i class="fas fa-chess-knight"></i></a>
+            <a target="_blank" id="knight"><i class="fas fa-chess-knight"></i></a>
         </div>
         <div class="copyright">
             <p>Steven Bryan Greve &copy; <script>document.write(new Date().getFullYear());</script></p> 
@@ -97,6 +97,16 @@
 
     <!-- JavaScript -->
     <script src="src/js/script.js"></script>
-    
+    <script>
+        const knightLink = document.getElementById("knight");
+        const themeLink = document.getElementById("default-theme-configurations");
+        knightLink.addEventListener("click", function(){
+            if(themeLink.getAttribute("href") == "src/css/default-theme/configurations.css"){
+                themeLink.href = "src/css/pink-theme/configurations.css";
+            }else{
+                themeLink.href = "src/css/default-theme/configurations.css";
+            }
+        })
+    </script>
 </body>
 </html>
