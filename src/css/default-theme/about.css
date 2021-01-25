@@ -1,0 +1,81 @@
+/* Navigation Styling */
+#home{
+    display: unset !important;
+}
+
+/* Video Styling */
+.showcase{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video{
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content{ 
+    z-index: 1; /* Placing the "Read More" link above the video. */
+}
+
+.btn{
+    color: #fff;
+    background-color: #EE63BB;
+    text-decoration: none;
+    border-radius: 0.313rem;
+    text-shadow: -0.044rem 0.044rem 0 #1a1a1d, 0.044rem 0.044rem 0 #1a1a1d, 0.044rem -0.044rem 0 #1a1a1d, -0.044rem -0.044rem 0 #1a1a1d;
+    font-size: 1.375rem;
+    padding: 0.438rem 0.75rem 0.438rem 0.75rem;
+}
+
+/* About Section Styling */
+.about{
+    font-size: 1.125rem;
+    line-height: 1.8rem;
+    margin: 0rem 13% 3.5rem 13%;
+}
+
+.about h1{
+    font-family: "Lora", serif;
+    color: #EE63BB;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: -0.044rem 0.044rem 0 #1a1a1d, 0.044rem 0.044rem 0 #1a1a1d, 0.044rem -0.044rem 0 #1a1a1d, -0.044rem -0.044rem 0 #1a1a1d;
+    margin: 3.5rem 0rem 3.5rem 0rem;
+}
+
+.one-third-column{
+    margin-bottom: 2rem;
+}
+
+.about h3{
+    color: #FF80D3;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    text-shadow: -0.044rem 0.044rem 0 #1a1a1d, 0.044rem 0.044rem 0 #1a1a1d, 0.044rem -0.044rem 0 #1a1a1d, -0.044rem -0.044rem 0 #1a1a1d;
+}
+
+.about p{
+    color: #fff;
+    text-shadow: 0.125rem 0.125rem 0.25rem #333, 0 0 0.063rem #000;
+}
