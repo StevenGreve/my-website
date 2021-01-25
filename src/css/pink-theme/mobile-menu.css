@@ -9,7 +9,7 @@
 .fa-bars{
     padding: 0.625rem;
     border-radius: 0.313rem;
-    background-color: rgb(0, 153, 188, 0.7);
+    background-color: rgba(255,128,211,0.9);
 }
 
 @media screen and (max-width: 767px){

@@ -23,8 +23,8 @@ table{
 }
   
 table tr{
-    border: 0.063rem solid #A73399;
-    background-color: rgba(238,99,187,.2);
+    border: 0.063rem solid #083d77;
+    background-color: #06bee1;
     padding: 0.35rem;
 }
   
@@ -37,7 +37,7 @@ table td{
   
 table th{
     color: #292933;
-    background-color: #FF80D3;
+    background-color: #0099BC;
     font-size: 1rem;
     letter-spacing: 0.1rem;
     padding: 0.625rem;
@@ -60,7 +60,7 @@ table th{
     }
     
     table tr{
-        border: 0.063rem solid #A73399;
+        border: 0.063rem solid #083d77;
         display: block;
         margin-bottom: 0.625rem;
     }
@@ -85,3 +85,4 @@ table th{
         border-bottom: 0;
     }
 }
+  

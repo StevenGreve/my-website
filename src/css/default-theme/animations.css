@@ -78,10 +78,10 @@
 
 /* Project Section — Card Menu Header Hover Effect */
 figcaption a:hover{
-    color: #FFBFFE;;
+    color: #a8dadc;
 }
 
 /* Archive Page — Button Effects */
 #btn:hover{
-    background-color: #EE63BB;
+    background-color: #410093;
 }
