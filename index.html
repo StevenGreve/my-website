@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="src/css/default-theme/configurations.css" id="default-theme-configurations">
-    <link rel="stylesheet" href="src/css/default-theme/style.css">
-    <link rel="stylesheet" href="src/css/default-theme/animations.css">
-    <link rel="stylesheet" href="src/css/default-theme/mobile-menu.css">
+    <link rel="stylesheet" href="src/css/default-theme/style.css" id="default-theme-style">
+    <link rel="stylesheet" href="src/css/default-theme/animations.css" id="default-theme-animations">
+    <link rel="stylesheet" href="src/css/default-theme/mobile-menu.css" id="default-theme-mobile-menu">
 </head>
 <body>
     <header>
@@ -99,12 +99,22 @@
     <script src="src/js/script.js"></script>
     <script>
         const knightLink = document.getElementById("knight");
-        const themeLink = document.getElementById("default-theme-configurations");
+        const configurations = document.getElementById("default-theme-configurations");
+        const style = document.getElementById("default-theme-style");
         knightLink.addEventListener("click", function(){
-            if(themeLink.getAttribute("href") == "src/css/default-theme/configurations.css"){
-                themeLink.href = "src/css/pink-theme/configurations.css";
-            }else{
-                themeLink.href = "src/css/default-theme/configurations.css";
+            if(configurations.getAttribute("href") == "src/css/default-theme/configurations.css"){
+                configurations.href = "src/css/pink-theme/configurations.css";
+            }
+            else{
+                configurations.href = "src/css/default-theme/configurations.css";
+            }
+        })
+        knightLink.addEventListener("click", function(){
+            if(style.getAttribute("href") == "src/css/default-theme/style.css"){
+                style.href = "src/css/pink-theme/style.css";
+            }
+            else{
+                style.href = "src/css/default-theme/style.css";
             }
         })
     </script>
