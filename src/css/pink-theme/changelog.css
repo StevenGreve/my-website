@@ -50,11 +50,11 @@ table th{
     }
   
     table caption{
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
     
     table thead{
-        height: 1px;
+        height: 0.063rem;
         overflow: hidden;
         position: absolute;
     }
@@ -66,7 +66,7 @@ table th{
     }
     
     table td{
-        border-bottom: 1px solid #ddd;
+        border-bottom: 0.063rem solid #ddd;
         display: block;
         font-size: 0.8rem;
         text-align: right;
