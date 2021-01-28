@@ -76,7 +76,6 @@
 #buttons{
     display: flex;
     justify-content: center;
-    grid-gap: 0.5rem;
     margin: 3.5rem 0rem 0rem 0rem;
 }
 
@@ -90,6 +89,7 @@
     border-radius: 0.25rem;
     text-shadow: -0.044rem 0.044rem 0 #1a1a1d, 0.044rem 0.044rem 0 #1a1a1d, 0.044rem -0.044rem 0 #1a1a1d, -0.044rem -0.044rem 0 #1a1a1d;
     transition-duration: 0.5s;
+    margin-left: 0.5rem;
 }
 
 .memory-board > div > img{ /* Adjusts the size of the pictures to the size of the div. */
@@ -99,8 +99,15 @@
 }
 
 @media (max-width: 600px){
+    #btn{
+        margin-left: 0.25rem;
+    }
     .memory-board{
         grid-template-columns: repeat(4, minmax(45px, 1fr));
         grid-template-rows: repeat(4, minmax(45px, 1fr));
+    }
+    /* Test text shadow effect on mpbile*/
+    .rules h1, .rules h3{
+        text-shadow: none;
     }
 }
