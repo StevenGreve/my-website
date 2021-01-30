@@ -31,3 +31,17 @@
         display: flex;
     }
 }
+
+@media (max-width: 600px){
+    #btn{
+        margin-left: 0.25rem;
+    }
+    .memory-board{
+        grid-template-columns: repeat(4, minmax(45px, 1fr));
+        grid-template-rows: repeat(4, minmax(45px, 1fr));
+    }
+    .rules h1, .rules h3, .project-header, figcaption a, .contact-header, .about h1, .about h3{
+        text-shadow: none;
+        -webkit-text-stroke: 0.025rem black;
+    }
+}
