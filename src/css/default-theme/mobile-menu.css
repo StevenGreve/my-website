@@ -43,10 +43,11 @@
 
     .rules h1, .project-header, .contact-header, .about h1{
         text-shadow: none;
-        -webkit-text-stroke: 0.025rem black;
+        -webkit-text-stroke: 0.025rem #000000;
     }
 
     .rules h3, figcaption a, .about h3{
         text-shadow: none;
+        color:#292933;
     }
 }
