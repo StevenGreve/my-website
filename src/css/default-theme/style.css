@@ -121,6 +121,30 @@ figcaption p{
     text-shadow: 0.125rem 0.125rem 0.25rem #333, 0 0 0.063rem #000;
 }
 
+/* Project Section — Tooltip Styling */
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 7.5rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.375rem;
+    padding: 0.313rem 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 107%;
+    left: 50%;
+    margin-left: -60px;
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
 /* Contact Section Styling */
 .contact-header{
     font-family: "Lora", serif;

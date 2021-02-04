@@ -81,6 +81,12 @@ figcaption a:hover{
     color: #FFBFFE;;
 }
 
+/* Project Section — Tooltip Hover Effect */
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Archive Page — Button Effects */
 #btn:hover{
     background-color: #EE63BB;
