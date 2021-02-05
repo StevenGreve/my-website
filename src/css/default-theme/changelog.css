@@ -6,7 +6,7 @@
 /* Changelog Table Styling */
 .table-wrapper{
     min-height: calc(100vh - 3.85rem - 8.5rem);
-    margin: 3rem 3rem 0 3rem;
+    margin: 3rem;
 }
 
 table caption{
