@@ -145,6 +145,36 @@ figcaption p{
     transition: opacity 1s;
 }
 
+/* Alert Box — Styling */
+.alert{
+    margin-top: 2rem;
+    padding: 1.25rem;
+    background-color: #2196F3;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.6s;
+}
+  
+.closebtn{
+    margin-left: 0.938rem;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 1.375rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.alert a{
+    color: #0645AD;
+    text-decoration: none;
+}
+
+.fa-twitter{
+    margin-left: 0.313rem;
+}
+
 /* Contact Section Styling */
 .contact-header{
     font-family: "Lora", serif;

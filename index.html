@@ -41,6 +41,10 @@
                 </ul>
                 <p>ATTENTION! Because I haven't created the changelog page yet, you can take a look at this <a href="https://github.com/StevenGreve/my-website/blob/master/README.md" target="_blank" id="readme" class="grow">»README«</a> if you want to see what I'm working on.</p>
             </div>
+            <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                <strong>Attention!</strong> I'm also on <a href="error.html" target="_blank"><strong>Twitter</strong></a> now!<i class="fab fa-twitter"></i>
+            </div>
         </div>
         <!-- Card Menu -->
         <!-- Source: https://codepen.io/browsertherapy/pen/vYGxRNB -->
@@ -135,6 +139,16 @@
                 mobileMenu.href = "src/css/default-theme/mobile-menu.css";
             }
         })
+        const close = document.getElementsByClassName("closebtn");
+        let i;
+
+        for (i = 0; i < close.length; i++) {
+            close[i].onclick = function(){
+                const div = this.parentElement;
+                div.style.opacity = "0";
+                setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+        }
     </script>
 </body>
 </html>

@@ -87,6 +87,18 @@ figcaption a:hover{
     opacity: 1;
 }
 
+/* Project Section — Alert Box Close Button Effect */
+
+.closebtn:hover{
+    color: #000000;
+}
+
+/* Project Section — Twitter Link Hover Effect */
+
+.alert a:hover{
+    text-decoration: underline;
+}
+
 /* Archive Page — Button Effects */
 #btn:hover{
     background-color: #410093;
