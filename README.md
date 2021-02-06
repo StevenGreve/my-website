@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/stevengreve/my-website/badge)](https://www.codefactor.io/repository/github/stevengreve/my-website)
+
 # Status Update 
 Here is what I'm currently working on:
 - [ ] Changing the color theme of the website. The website is going to have multiple different color themes. 
